@@ -3,8 +3,7 @@ const addBtn      = document.getElementById('addBtn');
 const moviesList  = document.getElementById('moviesList');
 const newMovieBox = document.getElementById('movieTitleBox');
 
-
-addBtn.addEventListener('click', function() {
+function addNewMovie() {
     let movieTitleText = newMovieBox.value;
 
     let movieItem = document.createElement('li');
@@ -13,4 +12,7 @@ addBtn.addEventListener('click', function() {
     moviesList.appendChild(movieItem);
 
     newMovieBox.value = null;
-});
+}
+
+
+addBtn.addEventListener('click', addNewMovie);
