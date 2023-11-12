@@ -1,7 +1,7 @@
-const addBtn      = document.getElementById('addBtn');
-const removeBtn   = document.getElementById('removeBtn');
-const moviesList  = document.getElementById('moviesList');
-const newMovieBox = document.getElementById('movieTitleBox');
+const addBtn      = document.getElementById('addBtn');         // blue
+const removeBtn   = document.getElementById('removeBtn');      // orange
+const moviesList  = document.getElementById('moviesList');     // yellow
+const newMovieBox = document.getElementById('movieTitleBox');  // red
 
 function addNewMovie() {
     let movieTitleText = newMovieBox.value;
@@ -21,7 +21,6 @@ function removeAllMovies() {
         allMovies.item(0).remove();
     }
 }
-
 
 addBtn.addEventListener('click', addNewMovie);
 removeBtn.addEventListener('click', removeAllMovies);
