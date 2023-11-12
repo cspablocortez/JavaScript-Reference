@@ -4,4 +4,4 @@
 
 # Link to Live Site
 
-https://cspablocortez.github.io/JavaScript-Reference
+[https://cspablocortez.github.io/JavaScript-Reference](https://cspablocortez.github.io/JavaScript-Reference){:target="_blank"}
