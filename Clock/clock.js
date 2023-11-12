@@ -11,4 +11,5 @@ function setTime() {
     seconds.innerText = formatTime(now.getSeconds());
 }
 
+setTime();
 window.setInterval(setTime, 1000);
