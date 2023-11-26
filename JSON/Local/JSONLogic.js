@@ -21,8 +21,35 @@ function populateHeader(obj) {
 
 function populateHeroes(obj) {
     const section = document.querySelector('section');
-    const heroes = obj.members;
-    console.log(heroes);
+    const heroes = obj.members; // an Array []
+    
+    for (const hero of heroes) {
+        const Article = document.createElement('article');
+        const H2 = document.createElement('h2'); // NAME
+        const P1 = document.createElement('p'); // secret ID
+        const P2 = document.createElement('p'); // age
+        const P3 = document.createElement('p'); // superpowers
+        const UL = document.createElement('ul'); // the list of superpowers
+
+        H2.textContent = hero.name;
+        P1.textContent = `Secret identity: ${hero.secretIdentity}`;
+        P2.textContent = `Age: ${hero.age}`;
+        P3.textContent = "Superpowers:"
+
+        for (const power of hero.powers) {
+            const listItem = document.createElement('li');
+            listItem.textContent = power;
+            UL.appendChild(listItem);
+        }
+
+        Article.appendChild(H2);
+        Article.appendChild(P1);
+        Article.appendChild(P2);
+        Article.appendChild(P3);
+        Article.appendChild(UL);
+
+        section.appendChild(Article);
+    }
 }
 
 
