@@ -4,6 +4,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Conversion Tool</title>
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/skeleton.css">
     </head>
 
     <body>
@@ -11,9 +13,9 @@
 
         <form name="" action="">
             <label for="">Fahrenheit</label>
-            <input id="fahrInput" type="number" placeholder="0°F" style="border: 1px solid red;" oninput="fahrToCelsius()">
+            <input id="fahrInput" type="number" placeholder="0°F" oninput="fahrToCelsius()">
             <label for="">Celsius</label>
-            <input id="celsiusInput" type="number" placeholder="0°C" style="border: 1px solid blue;" oninput="celsiusToFahr()">
+            <input id="celsiusInput" type="number" placeholder="0°C" oninput="celsiusToFahr()">
         </form>
 
         <script src="conversion.js"></script>

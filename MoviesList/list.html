@@ -4,18 +4,20 @@
     <head>
         <meta charset="UTF-8">
         <title>Movies List</title>
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/skeleton.css">
     </head>
 
     <body>
         <h1>Movies List</h1>
 
         <form name="new-movie" action="">
-            <input id="movieTitleBox" type="text" placeholder="Enter a movie..." style="border: 1px solid red;">
-            <button type="button" id="addBtn" style="border: 1px solid blue;">Add</button>
-            <button type="button" id="removeBtn" style="border: 1px solid orange;">Remove All</button>
+            <input id="movieTitleBox" type="text" placeholder="Enter a movie...">
+            <button type="button" class="button-primary" id="addBtn">Add</button>
+            <button type="button" id="removeBtn" style="border-color: #d51111">Remove All</button>
         </form>
 
-        <ol id="moviesList" style="border: 1px solid yellow;">
+        <ol id="moviesList">
             
         </ol>
 
