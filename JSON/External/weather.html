@@ -16,26 +16,26 @@
             <!-- Search Box -->
             <div class="six columns">
                 <form name="weather" action="">
-                    <input id="searchInput" type="text" placeholder="Search location">
+                    <input id="searchInput" type="text" placeholder="Search location" required>
                         <button type="button" class="button-primary" id="addBtn" onclick="fetchWeatherData()" >Go</button>
                 </form>
             </div>
             <!-- End Search Box -->
 
             <!-- Search Results -->
-            <div class="six columns">
+            <div id="search-results" class="six columns" style="visibility: hidden;">
                 <div class="row">
                     <div class="six columns">         <!-- Location and Forecast -->
-                        <h5>Las Vegas, NV</h5>
-                        <h6>Partly Cloudy</h6>
+                        <h5 id="city">_______</h5>
+                        <h6 id="forecast">______</h6>
                     </div>
                     <div class="six columns">
                         <div class="row">
-                            <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt=""> <!-- Icon -->
+                            <img id="icon" src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt=""> <!-- Icon -->
                         </div>
                        <div class="row">
-                         <h2>51°F</h2>      <!-- Temperature -->
-                         <h6 class="stats">Humidity: 61%</h6>  <!-- Stats -->
+                         <h2 id="temperature">______</h2>      <!-- Temperature -->
+                         <h6 id="humidity" class="stats">______</h6>  <!-- Stats -->
                        </div>
                     </div>
                 </div>
