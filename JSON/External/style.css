@@ -1,6 +1,6 @@
-html {
+/* html {
     font-family: 'Helvetica Neue', sans-serif;
-}
+} */
 
 .weather-card {
     float: left;
@@ -16,11 +16,6 @@ html {
 }
 
 .stats {
-    font-size: 0.75rem;
-    color: #a3a3a3;
-    display: inline;
+    color: #808080;
 }
 
-.stats p {
-    display: inline;
-}

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/normalize.css">
     <link rel="stylesheet" href="../../css/skeleton.css">
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
     <title>Weather</title>
 </head>
 <body>
@@ -17,7 +17,7 @@
             <div class="six columns">
                 <form name="weather" action="">
                     <input id="searchInput" type="text" placeholder="Search location">
-                        <button type="button" class="button-primary" id="addBtn">Go</button>
+                        <button type="button" class="button-primary" id="addBtn" onclick="fetchWeatherData()" >Go</button>
                 </form>
             </div>
             <!-- End Search Box -->
@@ -35,7 +35,7 @@
                         </div>
                        <div class="row">
                          <h2>51°F</h2>      <!-- Temperature -->
-                         <h6>Humidity: 61%</h6>  <!-- Stats -->
+                         <h6 class="stats">Humidity: 61%</h6>  <!-- Stats -->
                        </div>
                     </div>
                 </div>
@@ -45,5 +45,6 @@
         </div>
     </div>
     
+    <script src="script.js"></script>
 </body>
 </html>
