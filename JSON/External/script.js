@@ -12,7 +12,9 @@ async function fetchWeatherData() {
 
     if (data.error) {
         console.error("Unable to complete request");
-        alert(`Unable to complete request. ${data.error.message}`);
+        // alert(`Unable to complete request. ${data.error.message}`);
+        const errorBadge = document.getElementById('error-badge');
+        errorBadge.style.visibility = 'visible';
     } else {
         populateWeatherCard(data);
     }

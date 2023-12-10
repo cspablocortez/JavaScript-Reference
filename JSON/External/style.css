@@ -19,3 +19,15 @@
     color: #808080;
 }
 
+#error-badge {
+    height: 80px;
+    width: 100vw;
+    background-color: rgba(255, 0, 0, 0.45);
+    visibility: hidden;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    z-index: 2;
+    top: 40vh;
+    color: white;
+}
