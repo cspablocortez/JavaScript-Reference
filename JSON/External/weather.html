@@ -3,18 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/skeleton.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <title>Weather</title>
 </head>
 <body>
 
-    <div class="weather-card">
-        <div class="icon"><img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt=""></div>
-        <div class="temperature">51°F</div>
-        <div class="stats">
-            <p>Precipitation: 0%</p>
-            <p>Humidity: 29%</p>
-            <p>Wind: 10 mph</p>
+    <div class="container">
+        <div class="row">
+
+            <!-- Search Box -->
+            <div class="six columns">
+                <form name="weather" action="">
+                    <input id="searchInput" type="text" placeholder="Search location">
+                        <button type="button" class="button-primary" id="addBtn">Go</button>
+                </form>
+            </div>
+            <!-- End Search Box -->
+
+            <!-- Search Results -->
+            <div class="six columns">
+                <div class="row">
+                    <div class="six columns">         <!-- Location and Forecast -->
+                        <h5>Las Vegas, NV</h5>
+                        <h6>Partly Cloudy</h6>
+                    </div>
+                    <div class="six columns">
+                        <div class="row">
+                            <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt=""> <!-- Icon -->
+                        </div>
+                       <div class="row">
+                         <h2>51°F</h2>      <!-- Temperature -->
+                         <h6>Humidity: 61%</h6>  <!-- Stats -->
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Search Results -->
+
         </div>
     </div>
     
