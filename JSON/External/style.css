@@ -31,6 +31,10 @@
     color: white;
 }
 
+#error-badge h1 {
+    line-height: 80px;
+}
+
 .visible {
     visibility: visible;
 }
