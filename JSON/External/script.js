@@ -38,7 +38,6 @@ async function fetchAstroData() {
         setErrorBadgeTo('visible');
     } else {
         setErrorBadgeTo('invisible');
-        // populateWeatherCard(data);
     } 
 
     const sunUp = data.astronomy.astro.is_sun_up;
