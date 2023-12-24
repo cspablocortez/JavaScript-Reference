@@ -45,6 +45,12 @@
     background: linear-gradient(360deg, hsla(203, 79%, 87%, 1) 0%, hsla(204, 70%, 49%, 1) 100%, hsla(207, 45%, 63%, 1) 100%);
 }
 
-.morning h1, h2, h3, h4, h5, h6, p {
+.night {
     color: white;
+    height: 100vh;
+    background: hsla(0, 0%, 21%, 1);
+    background: linear-gradient(0deg, hsla(0, 0%, 21%, 1) 0%, hsla(240, 40%, 41%, 1) 100%);
+
 }
+
+
