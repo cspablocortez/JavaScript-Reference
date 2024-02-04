@@ -1,10 +1,11 @@
-const filterFiles = require('./mymodule')
+const myModule = require('./mymodule')
 
-filterFiles(process.argv[2], process.argv[3], function (err, files) {
+const directory = process.argv[2];
+const extension = process.argv[3];
+
+myModule(directory, extension, (err, filteredList) => {
     if (err) return console.error(err);
-
-    files.forEach(file => {
+    filteredList.forEach(file => {
         console.log(file);
     })
-    
-});
+})

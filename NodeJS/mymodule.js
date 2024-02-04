@@ -1,14 +1,14 @@
-const fs = require('fs')
-const path = require('path')
+const fs   = require('fs');
+const path = require('path');
 
- module.exports = function (directory, extension, callback) {
-    fs.readdir(directory, (err, files) => {
+module.exports = (dir, ext, callback) => {
+    ext = `.${ext}`;
+    fs.readdir(dir, (err, list) => {
         if (err) return callback(err);
-        files.forEach(file => {
-            if (path.extname(file) == `.${extension}`) {
-                console.log(file);
-            }
-            callback(null, files);
+        const filtered = list.filter(file => {
+            return path.extname(file) === ext;
         });
-    });
- }
+
+        return callback(null, filtered);
+    })
+}
