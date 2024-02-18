@@ -1,4 +1,4 @@
-((END=10) => {
+((END=4) => {
     const fibonacci = (n) => {
         if (n == 0 || n == 1) {
             return 1
