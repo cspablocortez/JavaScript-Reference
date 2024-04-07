@@ -1,10 +1,12 @@
 {
     "name": "Clock",
+    "id": "com.cspablocortez.PWA-Clock",
     "short_name": "Clock",
     "description": "A PWA clock app that displays the user's timezone too.",
     "orientation": "portrait",
     "start_url": "../PWA-Clock/index.html",
     "display": "standalone",
+    "background_color": "#FFFFFF",
     "icons": [
         {
             "src": "icons/android-chrome-192x192.png",

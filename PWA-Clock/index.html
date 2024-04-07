@@ -20,7 +20,21 @@
     </div>
 
 
+    
     <script src="js/clock.js"></script>
     <script src="js/darkMode.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('sw.js').then(function(registration) {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function(err) {
+                    console.log('Service Worker registration failed: ', err);
+                });
+            });
+        }
+    </script>
+    </script>
+
 </body>
 </html>
