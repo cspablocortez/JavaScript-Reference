@@ -13,11 +13,6 @@ const APP_STATIC_RESOURCES = [
 
 self.addEventListener("install", (e) => {
     console.log('Service Worker: Installed');
-    // e.waitUntil((async () => {
-    //     const cache = await caches.open(CACHE_NAME);
-    //     cache.addAll(APP_STATIC_RESOURCES);
-    // })(),
-    // );
 });
 
 self.addEventListener('activate', (e) => {
