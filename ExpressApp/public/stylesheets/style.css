@@ -1,8 +1,26 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+    --background-color: #ffffff;
+    --text-color: #222222;
 }
 
-a {
-  color: #00B7FF;
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #2a2424;
+        --text-color: #eeeeee;
+    }
+}
+
+html {
+    background-color: var(--background-color);
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h1, h2, h5, h6 {
+    color: var(--text-color);
+    text-align: center;
 }

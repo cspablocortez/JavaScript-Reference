@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  .container
+  .row
+    h1
+      span#hours 00
+      | :
+      span#minutes 00
+      | :
+      span#seconds 00
+    h5#timezone
+    h6 Progressive Web App Clock
+
